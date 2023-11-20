@@ -1,0 +1,21 @@
+[package]
+name = "voice-bot-discord"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serenity = {version = "0.11.7", features = ["client", "standard_framework", "voice"]}
+songbird = "0.3.2"
+tokio = { version = "1.34.0", features = ["macros", "rt-multi-thread"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3.18", features = [] }
+tracing-futures = "0.2"
+dotenv = "0.15.0"
+hound = "3.5.1"
+reqwest = { version = "0.11.22", features = ["blocking"] }
+futures = { version = "0.3.29" }
+base64 = "0.21.5"
+serde_json = "1.0.108"
+serde = { version = "1.0.192", features = ["derive"] }
